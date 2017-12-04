@@ -1,0 +1,23 @@
+ <!-- Header  -->
+<% include partials/header.ejs %> 
+<!-- Header  -->
+          <div class="inner cover">
+          <h1 class="title" class="cover-heading">Nodejs</h1>
+            <% if(msg.status){ %>
+              <style>
+                input.form-control{
+                  border-color: red;
+                  border-width: 3px;
+                }
+              </style>
+              <p class="alert alert-danger"><%= msg.code %></p>
+            <% } %>  
+            
+             <!-- Form  -->
+             <% include partials/form.ejs %> 
+             <!-- Form  -->
+          </div>
+
+  <!-- Footer  -->
+  <% include partials/footer.ejs %> 
+  <!-- Footer  -->
